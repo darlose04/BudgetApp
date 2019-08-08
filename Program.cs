@@ -14,6 +14,9 @@ namespace BudgetApp
 
             Expenditures.Utilities();
             Expenditures.OtherCosts();
+
+            moneyAfterExpeditures = Expenditures.totalUtilities - Expenditures.totalOtherCosts;
+            Console.WriteLine(moneyAfterExpeditures);
         }
 
         
