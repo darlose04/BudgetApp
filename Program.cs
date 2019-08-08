@@ -8,6 +8,7 @@ namespace BudgetApp
         {
             int income;
             int moneyAfterExpeditures;
+            int totalCosts;
 
             Console.Write("Enter your total monthly income: ");
             income = Convert.ToInt32(Console.ReadLine());
@@ -15,10 +16,11 @@ namespace BudgetApp
             Expenditures.Utilities();
             Expenditures.OtherCosts();
 
-            moneyAfterExpeditures = Expenditures.totalUtilities - Expenditures.totalOtherCosts;
-            Console.WriteLine(moneyAfterExpeditures);
-        }
+            totalCosts = Expenditures.totalUtilities + Expenditures.totalOtherCosts;
+            moneyAfterExpeditures = income - totalCosts;
 
-        
+            Expenditures.PrintColorMessage(ConsoleColor.Green, "Your total expenses equal: " + totalCosts);
+            Expenditures.PrintColorMessage(ConsoleColor.Green, "You have " + moneyAfterExpeditures + " dollars to spend on other things.");
+        }
     }
 }
