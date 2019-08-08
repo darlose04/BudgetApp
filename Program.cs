@@ -6,7 +6,12 @@ namespace BudgetApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int income;
+
+            Console.Write("Enter your total monthly income: ");
+            income = Convert.ToInt32(Console.ReadLine());
+
+            Expenditures.Utilities();
         }
     }
 }
