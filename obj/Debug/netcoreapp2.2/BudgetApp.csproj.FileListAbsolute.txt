@@ -1,0 +1,11 @@
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.csprojAssemblyReference.cache
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.csproj.CoreCompileInputs.cache
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.AssemblyInfoInputs.cache
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.AssemblyInfo.cs
+C:\Users\zsmit\source\repos\BudgetApp\bin\Debug\netcoreapp2.2\BudgetApp.deps.json
+C:\Users\zsmit\source\repos\BudgetApp\bin\Debug\netcoreapp2.2\BudgetApp.runtimeconfig.json
+C:\Users\zsmit\source\repos\BudgetApp\bin\Debug\netcoreapp2.2\BudgetApp.runtimeconfig.dev.json
+C:\Users\zsmit\source\repos\BudgetApp\bin\Debug\netcoreapp2.2\BudgetApp.dll
+C:\Users\zsmit\source\repos\BudgetApp\bin\Debug\netcoreapp2.2\BudgetApp.pdb
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.dll
+C:\Users\zsmit\source\repos\BudgetApp\obj\Debug\netcoreapp2.2\BudgetApp.pdb
