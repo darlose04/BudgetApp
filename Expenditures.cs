@@ -31,7 +31,29 @@ namespace BudgetApp
 
             totalUtilities = internetCable + phone + electric + mortgageOrRent + gas + water;
 
-            Console.WriteLine("Your total monthly utilities cost is: " + totalUtilities);
+            PrintColorMessage(ConsoleColor.Green, "Your total monthly utilities cost is: " + totalUtilities);
+        }
+
+        public static void OtherCosts()
+        {
+            int totalOtherCosts;
+            int groceries;
+            int carExpenses;
+
+            Console.Write("Enter total amount spent on groceries: ");
+            groceries = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter car related expenses (gas, insurance, maintenance): ");
+            carExpenses = Convert.ToInt32(Console.ReadLine());
+
+            totalOtherCosts = groceries + carExpenses;
+            PrintColorMessage(ConsoleColor.Green, "Costs in addition to utilities amounts to: " + totalOtherCosts);
+        }
+
+        static void PrintColorMessage(ConsoleColor color, string message)
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine(message);
+            Console.ResetColor();
         }
     }
 }
