@@ -4,17 +4,19 @@ using System.Text;
 
 namespace BudgetApp
 {
-    static class Expenditures
+    public static class Expenditures
     {
+        public static int totalUtilities;
+        public static int internetCable;
+        public static int phone;
+        public static int electric;
+        public static int mortgageOrRent;
+        public static int gas;
+        public static int water;
+
         public static void Utilities()
         {
-            int totalUtilities;
-            int internetCable;
-            int phone;
-            int electric;
-            int mortgageOrRent;
-            int gas;
-            int water;
+            
 
             Console.Write("Enter your internet/cable bill: ");
             internetCable = Convert.ToInt32(Console.ReadLine());
@@ -32,13 +34,17 @@ namespace BudgetApp
             totalUtilities = internetCable + phone + electric + mortgageOrRent + gas + water;
 
             PrintColorMessage(ConsoleColor.Green, "Your total monthly utilities cost is: " + totalUtilities);
+
+            
         }
+
+        public static int totalOtherCosts;
+        public static int groceries;
+        public static int carExpenses;
 
         public static void OtherCosts()
         {
-            int totalOtherCosts;
-            int groceries;
-            int carExpenses;
+            
 
             Console.Write("Enter total amount spent on groceries: ");
             groceries = Convert.ToInt32(Console.ReadLine());
@@ -47,9 +53,11 @@ namespace BudgetApp
 
             totalOtherCosts = groceries + carExpenses;
             PrintColorMessage(ConsoleColor.Green, "Costs in addition to utilities amounts to: " + totalOtherCosts);
+
+            
         }
 
-        static void PrintColorMessage(ConsoleColor color, string message)
+        public static void PrintColorMessage(ConsoleColor color, string message)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(message);
